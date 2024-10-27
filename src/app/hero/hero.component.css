@@ -1,0 +1,4 @@
+:host {
+  max-width: 80%; /* or a fixed width like 800px */
+  margin: 0 auto;
+}
