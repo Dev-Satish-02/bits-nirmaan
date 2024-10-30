@@ -1,0 +1,63 @@
+.accordion {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #ccc; /* Line on top of the entire accordion */
+  border-bottom: 1px solid #ccc; /* Line on bottom of the entire accordion */
+}
+
+.accordion-item {
+  padding: 10px 0;
+}
+
+.accordion-item + .accordion-item {
+  border-top: 1px solid #ccc; /* Adds line between items */
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-body {
+  overflow: hidden;
+  transition: opacity 1s ease, height 1s ease;
+}
+
+.accordion-body .content {
+  display: flex;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+/* .accordion-body.reverse .content {
+  flex-direction: row-reverse;
+} */
+
+.text {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-image {
+  width: 50%;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+/* Responsive Styling for Mobile View */
+@media (max-width: 768px) {
+  .accordion-body .content {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+  .project-image, .text {
+    width: 100%; /* Full width for image and text */
+    padding: 5px; /* Adjust padding for mobile */
+  }
+}

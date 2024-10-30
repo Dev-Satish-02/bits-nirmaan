@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<div class="accordion">
+  <div *ngFor="let project of projects; let i = index" class="accordion-item" [class.first]="i === 0" [class.last]="i === projects.length - 1">
+    <div class="accordion-header" (click)="toggleAccordion(i)">
+      <h3>{{ project.title }}</h3>
+      <span>{{ openIndex === i ? '▲' : '▼' }}</span>
+    </div>
+    <div *ngIf="openIndex === i" class="accordion-body" [ngClass]="{'reverse': i % 2 !== 0}">
+      <div class="content lg:mx-20">
+        <p class="text">{{ project.content }}</p>
+        <img [src]="project.imageUrl" alt="{{ project.title }}" class="project-image">
+      </div>
+    </div>
+  </div>
+</div>
