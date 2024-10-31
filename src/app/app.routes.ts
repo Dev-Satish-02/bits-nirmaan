@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { ProjectsComponent } from './projects/projects.component';
-import { HeroComponent } from './hero/hero.component';
+import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
 
 export const routes: Routes = [
     { 
         path: '', 
-        component: HeroComponent 
+        component: HomeComponent 
     },
     {
-        path: 'projects',
-        component: ProjectsComponent
+        path: 'team',
+        component: TeamComponent
     }
 ];

@@ -1,3 +1,6 @@
+<div class="title text-4xl font-bold mb-6 custom-line-height text-center">
+  Our Projects
+</div>
 <div class="accordion">
   <div *ngFor="let project of projects; let i = index" class="accordion-item" [class.first]="i === 0" [class.last]="i === projects.length - 1">
     <div class="accordion-header" (click)="toggleAccordion(i)">
