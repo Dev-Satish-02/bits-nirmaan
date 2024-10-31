@@ -1,1 +1,27 @@
-<p>events works!</p>
+<div class="title text-4xl font-bold mt-28 mb-6 custom-line-height text-center">
+  Our Events
+</div>
+
+<div class="carousel lg:mx-32 sm:mx-2">
+  <div class="carousel-wrapper">
+    <div class="carousel-item" *ngFor="let event of events">
+      <div class="image-container">
+        <img
+          [src]="event.imageUrl"
+          alt="{{ event.title }}"
+          class="event-image"
+        />
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">{{ event.title }}</h3>
+        <p class="event-description">{{ event.description }}</p>
+        <button class="read-more-btn">
+          <span class="read-more-text">Read More</span>
+          <div class="arrow-circle">
+            <span class="arrow">→</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
