@@ -1,16 +1,27 @@
 <div class="title text-4xl font-bold mb-6 custom-line-height text-center">
-  Our Projects
+  Our Domains
 </div>
-<div class="accordion">
-  <div *ngFor="let project of projects; let i = index" class="accordion-item" [class.first]="i === 0" [class.last]="i === projects.length - 1">
-    <div class="accordion-header" (click)="toggleAccordion(i)">
-      <h3>{{ project.title }}</h3>
-      <span>{{ openIndex === i ? '▲' : '▼' }}</span>
-    </div>
-    <div *ngIf="openIndex === i" class="accordion-body" [ngClass]="{'reverse': i % 2 !== 0}">
-      <div class="content lg:mx-20">
-        <p class="text">{{ project.content }}</p>
-        <img [src]="project.imageUrl" alt="{{ project.title }}" class="project-image">
+
+<div class="carousel sm:mx-2 flex justify-center">
+  <div class="carousel-wrapper">
+    <div class="carousel-item" *ngFor="let project of projects">
+      <div class="image-container">
+        <img
+          src="{{ project.imageUrl}}"
+          alt="{{ project.title }}"
+          class="event-image"
+        />
+      </div>
+      <div class="event-content">
+        <h3 class="event-title">{{ project.title }}</h3>
+        <p class="event-description">{{ project.content }}</p>
+        <button class="cta">
+          <span>explore</span>
+          <svg width="15px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
       </div>
     </div>
   </div>

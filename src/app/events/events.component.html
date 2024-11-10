@@ -2,26 +2,16 @@
   Our Events
 </div>
 
-<div class="carousel lg:mx-32 sm:mx-2">
-  <div class="carousel-wrapper">
-    <div class="carousel-item" *ngFor="let event of events">
-      <div class="image-container">
-        <img
-          [src]="event.imageUrl"
-          alt="{{ event.title }}"
-          class="event-image"
-        />
-      </div>
-      <div class="event-content">
-        <h3 class="event-title">{{ event.title }}</h3>
-        <p class="event-description">{{ event.description }}</p>
-        <button class="cta">
-          <span>explore</span>
-          <svg width="15px" height="10px" viewBox="0 0 13 10">
-            <path d="M1,5 L11,5"></path>
-            <polyline points="8 1 12 5 8 9"></polyline>
-          </svg>
-        </button>
+<div class="accordion max-w-screen-lg">
+  <div *ngFor="let event of events; let i = index" class="accordion-item" [class.first]="i === 0" [class.last]="i === events.length - 1">
+    <div class="accordion-header" (click)="toggleAccordion(i)">
+      <h3>{{ event.title }}</h3>
+      <span>{{ openIndex === i ? '▲' : '▼' }}</span>
+    </div>
+    <div *ngIf="openIndex === i" class="accordion-body" [ngClass]="{'reverse': i % 2 !== 0}">
+      <div class="content lg:mx-20">
+        <p class="text">{{ event.description }}</p>
+        <img [src]="event.imageUrl" alt="{{ event.title }}" class="project-image">
       </div>
     </div>
   </div>

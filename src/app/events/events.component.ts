@@ -9,6 +9,12 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
 })
 export class EventsComponent {
+  openIndex: number | null = null;
+
+  toggleAccordion(index: number) {
+    this.openIndex = this.openIndex === index ? null : index;
+  }
+  
   events = [
     {
       title: 'KADAM',

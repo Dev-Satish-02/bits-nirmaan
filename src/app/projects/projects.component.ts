@@ -11,6 +11,44 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
+      title: 'Education',
+      content: `The School Adoption Program (SAP) is one of the six education
+                projects in Nirmaan. SAP aims to improve the learning
+                environment of government schools by providing resources,
+                infrastructure upgrades, and to enhance the overall education
+                standard. Our ultimate goal is to provide enough comprehensive
+                support to the schools so that they can eventually become selfreliant and sustain the improvements on their own.
+                `,
+      imageUrl:
+        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg'
+    },
+    {
+      title: 'Community Development',
+      content: `The School Adoption Program (SAP) is one of the six education
+                projects in Nirmaan. SAP aims to improve the learning
+                environment of government schools by providing resources,
+                infrastructure upgrades, and to enhance the overall education
+                standard. Our ultimate goal is to provide enough comprehensive
+                support to the schools so that they can eventually become selfreliant and sustain the improvements on their own.
+                `,
+      imageUrl:
+        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg'
+    },
+    {
+      title: 'Women Empowerment',
+      content: `The School Adoption Program (SAP) is one of the six education
+                projects in Nirmaan. SAP aims to improve the learning
+                environment of government schools by providing resources,
+                infrastructure upgrades, and to enhance the overall education
+                standard. Our ultimate goal is to provide enough comprehensive
+                support to the schools so that they can eventually become selfreliant and sustain the improvements on their own.
+                `,
+      imageUrl:
+        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg'
+    },
+  ]
+/*   projects = [
+    {
       title: 'School Adoption Program',
       content: `The School Adoption Program (SAP) is one of the six education
                 projects in Nirmaan. SAP aims to improve the learning
@@ -142,5 +180,5 @@ export class ProjectsComponent {
 
   toggleAccordion(index: number) {
     this.openIndex = this.openIndex === index ? null : index;
-  }
+  } */
 }
