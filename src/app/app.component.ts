@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
-import { HeroComponent } from './hero/hero.component';
 import { FooterComponent } from './footer/footer.component';
 
 @Component({
@@ -13,9 +12,7 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule, 
     RouterOutlet, 
     NavbarComponent,
-    HeroComponent, 
-    FooterComponent, 
-    RouterLink
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
