@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -9,6 +10,19 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
 })
 export class ProjectsComponent {
+  constructor(private router: Router) {}
+
+  navigateToProjects(title: string): void {
+    if (title === 'Education') {
+      this.router.navigate(['/education']);
+    } else if (title === 'Community Development') {
+      this.router.navigate(['/community-development']);
+    } else if (title === 'Women Empowerment') {
+      this.router.navigate(['/women-empowerment']);
+    }
+  }
+
+
   projects = [
     {
       title: 'Education',
