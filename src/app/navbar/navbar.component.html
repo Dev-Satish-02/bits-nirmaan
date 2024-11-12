@@ -9,7 +9,7 @@
       <!-- Desktop Menu: Align Home and Other Links to the Right -->
       <div class="hidden sm:flex sm:ml-auto space-x-4">
         <a href="#" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-        <a routerLink="/" fragment="projects" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+        <a routerLink="/" fragment="projects" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Work</a>
         <a routerLink="/" fragment="events" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Events</a>
         <a routerLink="team" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Team</a>
         <a href="#" class="text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
@@ -37,8 +37,8 @@
   <!-- Mobile Dropdown Menu -->
   <div *ngIf="isMenuOpen" class="sm:hidden bg-white px-2 pt-2 pb-3 space-y-1">
     <a href="#" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Home</a>
-    <a href="#" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Projects</a>
-    <a href="#" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Events</a>
+    <a routerLink="/" fragment="projects" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Work</a>
+    <a routerLink="/" fragment="events" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Events</a>
     <a href="#" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Team</a>
     <a href="#" class="block text-gray-600 hover:bg-gray-100 hover:text-gray-800 px-3 py-2 rounded-md text-base font-medium">Contact</a>
   </div>
