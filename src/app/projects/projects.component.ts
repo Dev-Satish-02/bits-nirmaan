@@ -22,7 +22,6 @@ export class ProjectsComponent {
     }
   }
 
-
   projects = [
     {
       title: 'Education',
@@ -34,34 +33,22 @@ export class ProjectsComponent {
                 support to the schools so that they can eventually become selfreliant and sustain the improvements on their own.
                 `,
       imageUrl:
-        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg'
+        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg',
     },
     {
       title: 'Community Development',
-      content: `The School Adoption Program (SAP) is one of the six education
-                projects in Nirmaan. SAP aims to improve the learning
-                environment of government schools by providing resources,
-                infrastructure upgrades, and to enhance the overall education
-                standard. Our ultimate goal is to provide enough comprehensive
-                support to the schools so that they can eventually become selfreliant and sustain the improvements on their own.
-                `,
+      content: `The Participatory Community Development project of Nirmaan works with the residents of bastis in and around Pilani to improve their quality of life and equip them with basic day-today necessities. This seeks to engage local populations in development projects in order to make the projects more sustainable and successful.`,
       imageUrl:
-        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg'
+        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/PCD.jpg',
     },
     {
       title: 'Women Empowerment',
-      content: `The School Adoption Program (SAP) is one of the six education
-                projects in Nirmaan. SAP aims to improve the learning
-                environment of government schools by providing resources,
-                infrastructure upgrades, and to enhance the overall education
-                standard. Our ultimate goal is to provide enough comprehensive
-                support to the schools so that they can eventually become selfreliant and sustain the improvements on their own.
-                `,
+      content: `Unnati is a project under the Nirmaan dedicated to empowering women. Our mission is to guide beneficiaries in establishing sustainable businesses through skill development, mentorship, and resource access. Women acquire skills like stitching and jewelry making, creating products such as jute handbags, bracelets, and organic Holi colors. Unnati stands as a beacon of hope, fostering a society where women are strong and self-reliant.`,
       imageUrl:
-        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/SAP.jpg'
+        'https://raw.githubusercontent.com/Dev-Satish-01/images/refs/heads/main/bits-nirmaan/Pragati.jpg',
     },
-  ]
-/*   projects = [
+  ];
+  /*   projects = [
     {
       title: 'School Adoption Program',
       content: `The School Adoption Program (SAP) is one of the six education
