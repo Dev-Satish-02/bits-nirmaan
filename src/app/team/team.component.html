@@ -1,12 +1,24 @@
-<div class="card-container">
+<div class="lg:text-6xl text-4xl font-bold text-center my-6">Meet the Team</div>
+<div class="card-container lg:mx-32">
     <div class="card" *ngFor="let card of cards">
-      <img [src]="card.photo" alt="Card Image" class="card-image" />
-      <div class="card-content">
-        <h2 class="card-title">{{ card.name }}</h2>
-      </div>
-      <div class="card-content">
-        <h2 class="card-title">{{ card.title }}</h2>
-      </div>
+        <img [src]="card.photo" alt="Card Image" class="card-image" />
+        <div class="card-content">
+            <h2 class="card-name">{{ card.name }}</h2>
+        </div>
+        <div class="card-content">
+            <h2 class="card-title">{{ card.title }}</h2>
+        </div>
     </div>
-  </div>
-  
+</div>
+<div class="lg:text-6xl text-4xl font-bold text-center my-10">Events Head</div>
+<div class="card-container lg:mx-72">
+    <div class="card" *ngFor="let event of events">
+        <img [src]="event.photo" alt="Card Image" class="card-image" />
+        <div class="card-content">
+            <h2 class="card-name">{{ event.name }}</h2>
+        </div>
+        <div class="card-content">
+            <h2 class="card-title">{{ event.title }}</h2>
+        </div>
+    </div>
+</div>
