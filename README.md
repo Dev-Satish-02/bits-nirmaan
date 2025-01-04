@@ -1,27 +1,44 @@
-# BitsNirmaan
+# Nirmaan Organization | Pilani Chapter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+The website nirmaanpilani.org is developed using Angular with TypeScript for its framework and Tailwind CSS for styling. The site is hosted on GoDaddy for accessibility.
 
-## Development server
+## Running the Application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dev-Satish-02/bits-nirmaan.git
+   cd bits-nirmaan
+   ```
 
-## Code scaffolding
+2. Start the development server:
+   ```bash
+   ng serve
+   ```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Access the application at `http://localhost:4200`
 
-## Build
+## Hosting on GoDaddy
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Create browser Folder:
+   ```bash
+   ng build
+   ```
 
-## Running unit tests
+2. Move to browser folder:
+   ```bash
+   cd browser
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Zip browser folder.
 
-## Running end-to-end tests
+4. Access GoDaddy dashboard for nirmaanpilani.org and cPanel Admin for the same.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Unzip zip folder to public_html.
 
-## Further help
+## Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Fork the repository
+2. Create a new branch for your feature
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
